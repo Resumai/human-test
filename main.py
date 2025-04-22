@@ -1,10 +1,14 @@
-def average(list_of_numbers):
+from zmogus import Zmogus
 
-    total = 0
-    count = 0 
 
-    for x in list_of_numbers:
-        total += x
-        count += 1
 
-    return total / count
+def average(numbers):
+    return sum(numbers) / len(numbers)
+
+
+
+def create_person():
+    name = input("Enter your name: ")
+    surname = input("Enter your surname: ")
+    age = input("Enter your age: ")
+    return Zmogus(name, surname, age)
